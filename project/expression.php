@@ -1,6 +1,10 @@
-<div id="expression">
+<h1>表达式</h1>
+<div id="expression" class="wrap">
 	{{5+5}}<br>
-</div>
+	{{ok?'YES':'NO'}}<br>
+	{{message.split('').reverse().join('')}}
+	<div v-bind:id="'list-'+id">vue学习</div>
+</div> 
 
 <script type="text/javascript">
 new Vue({
