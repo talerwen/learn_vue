@@ -6,10 +6,18 @@
 </head>
 <body>
 <?php 
+$project_name = [
+	'form',			// 表单
+	'event',		// 事件
+	'circulation',	// 循环 
+	'condition',	// 条件
+	'directive',	// 指令
+	'expression'	// 表达式
+];
 $dir='./project/';
-include_once $dir.'condition.php'; 
-include_once $dir.'directive.php'; 
-include_once $dir.'expression.php'; 
+foreach($project_name as $v){
+	include_once $dir.$v.'.php';
+}
 ?>
 
 </body>
