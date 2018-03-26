@@ -7,6 +7,7 @@
 <body>
 <?php 
 $project_name = [
+	'component',		// 组件
 	'form',			// 表单
 	'event',		// 事件
 	'circulation',	// 循环 
